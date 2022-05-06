@@ -5,9 +5,7 @@ WORKDIR /usr/src
 
 COPY ./src .
 
-EXPOSE 8860/udp
-EXPOSE 8860/tcp
-EXPOSE 8082/udp
-EXPOSE 8082/tcp
+EXPOSE 8860
+EXPOSE 8082
 
 RUN ./install.sh
